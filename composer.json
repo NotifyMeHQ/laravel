@@ -1,0 +1,45 @@
+{
+    "name": "notifymehq/laravel5",
+    "description": "A laravel 5 bridge for notifyme",
+    "license": "MIT",
+    "keywords": ["notifymehq", "notifyme", "laravel"],
+    "authors": [
+        {
+            "name": "Joseph Cohen",
+            "email": "joseph.cohen@dinkbit.com"
+        },
+        {
+            "name": "Graham Campbell",
+            "email": "graham@mineuk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "graham-campbell/manager": "~2.0",
+        "illuminate/contracts": "~5.0",
+        "illuminate/support": "~5.0",
+        "notifymehq/notifyme": "~1.0",
+        "orchestra/config": "~3.0",
+        "orchestra/support-providers": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotifyMeHQ\\Laravel5\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotifyMeHQ\\Laravel5\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
