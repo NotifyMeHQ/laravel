@@ -26,7 +26,7 @@ class NotifyMeManager extends AbstractManager
     protected $factory;
 
     /**
-     * Create a new digitalocean manager instance.
+     * Create a new notifyme manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
      * @param \NotifyMeHQ\NotifyMe\NotifyMeFactory    $factory
