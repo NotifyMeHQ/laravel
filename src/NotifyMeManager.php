@@ -58,7 +58,7 @@ class NotifyMeManager extends AbstractManager
      */
     protected function getConfigName()
     {
-        return 'notifymehq/notifyme';
+        return 'notifyme';
     }
 
     /**
