@@ -24,7 +24,7 @@ class NotifyMeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->addConfigComponent('notifymehq/notifyme', 'notifymehq/notifyme', realpath(__DIR__.'/../config'));
+        $this->setupConfig();
     }
 
     /**
@@ -36,6 +36,20 @@ class NotifyMeServiceProvider extends ServiceProvider
     {
         $this->registerFactory();
         $this->registerManager();
+    }
+
+    /**
+     * Setup the config.
+     *
+     * @return void
+     */
+    protected function setupConfig()
+    {
+        $source = realpath(__DIR__.'/../config/notifyme.php');
+
+        $this->publishes([$source => config_path('notifyme.php')]);
+
+        $this->mergeConfigFrom($source, 'notifyme');
     }
 
     /**
