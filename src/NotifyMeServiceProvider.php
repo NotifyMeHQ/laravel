@@ -81,6 +81,7 @@ class NotifyMeServiceProvider extends ServiceProvider
         });
 
         $this->app->alias('notifyme', 'NotifyMeHQ\Laravel5\NotifyMeManager');
+        $this->app->alias('notifyme', 'NotifyMeHQ\NotifyMe\ManagerInterface');
     }
 
     /**
