@@ -14,9 +14,10 @@ namespace NotifyMeHQ\Laravel5;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
+use NotifyMeHQ\NotifyMe\ManagerInterface;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
-class NotifyMeManager extends AbstractManager
+class NotifyMeManager extends AbstractManager implements ManagerInterface
 {
     /**
      * The factory instance.
@@ -36,13 +37,14 @@ class NotifyMeManager extends AbstractManager
     public function __construct(Repository $config, NotifyMeFactory $factory)
     {
         parent::__construct($config);
+
         $this->factory = $factory;
     }
 
     /**
      * Create the connection instance.
      *
-     * @param config[] $config
+     * @param string[] $config
      *
      * @return \NotifyMeHQ\NotifyMe\GatewayInterface
      */
