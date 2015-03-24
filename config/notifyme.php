@@ -89,7 +89,7 @@ return [
         ],
 
         'yo' => [
-            'driver' => 'webhook',
+            'driver' => 'yo',
             'token'  => 'your-token',
         ],
 
