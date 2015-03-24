@@ -88,6 +88,11 @@ return [
             'driver' => 'webhook',
         ],
 
+        'yo' => [
+            'driver' => 'webhook',
+            'token'  => 'your-token',
+        ],
+
     ],
 
 ];
