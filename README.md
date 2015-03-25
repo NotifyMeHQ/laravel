@@ -76,10 +76,6 @@ echo $response->isSent() ? 'Message sent' : 'Message going nowhere';
 
 For more information about the usage go to [NotifyMe](https://github.com/notifymehq/notifyme).
 
-## Todo
-
-- [ ] Add tests
-
 ## License
 
 NotifyMe is licensed under [The MIT License (MIT)](LICENSE).
