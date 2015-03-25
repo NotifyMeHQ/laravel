@@ -21,7 +21,7 @@
         "notifymehq/notifyme": "~1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.0"
+        "graham-campbell/testbench": "~2.0"
     },
     "autoload": {
         "psr-4": {
@@ -30,7 +30,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "NotifyMeHQ\\Laravel5\\Tests\\": "tests/"
+            "NotifyMeHQ\\Tests\\Laravel5\\": "tests/"
         }
     },
     "extra": {

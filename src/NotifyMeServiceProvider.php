@@ -12,8 +12,8 @@
 
 namespace NotifyMeHQ\Laravel5;
 
+use Illuminate\Support\ServiceProvider;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
-use Orchestra\Support\Providers\ServiceProvider;
 
 class NotifyMeServiceProvider extends ServiceProvider
 {
