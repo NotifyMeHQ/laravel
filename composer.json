@@ -5,16 +5,20 @@
     "keywords": ["notifymehq", "notifyme", "laravel"],
     "authors": [
         {
-            "name": "Joseph Cohen",
-            "email": "joseph.cohen@dinkbit.com"
+            "name": "James Brooks",
+            "email": "james@cachethq.io"
         },
         {
             "name": "Graham Campbell",
-            "email": "graham@mineuk.com"
+            "email": "graham@cachethq.io"
+        },
+        {
+            "name": "Joseph Cohen",
+            "email": "joe@cachethq.io"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.9",
         "graham-campbell/manager": "~2.0",
         "illuminate/contracts": "~5.0",
         "illuminate/support": "~5.0",
