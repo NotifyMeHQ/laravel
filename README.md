@@ -32,7 +32,7 @@ If you want to use the Facade, also add the alias:
 ```php
 'aliases' => [
     // ...
-    'NotifyMe'  => 'NotifyMeHQ\Laravel5\Facades\Segment',
+    'NotifyMe'  => 'NotifyMeHQ\Laravel5\Facades\NotifyMe',
 ],
 ```
 
