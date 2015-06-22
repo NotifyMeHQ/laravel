@@ -46,7 +46,9 @@ class NotifyMeServiceProvider extends ServiceProvider
     {
         $source = realpath(__DIR__.'/../config/notifyme.php');
 
-        $this->publishes([$source => config_path('notifyme.php')]);
+        if (class_exists('Illuminate\Foundation\Application', false)) {
+            $this->publishes([$source => config_path('notifyme.php')]);
+        }
 
         $this->mergeConfigFrom($source, 'notifyme');
     }
