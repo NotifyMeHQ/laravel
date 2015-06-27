@@ -54,12 +54,6 @@ return [
             'token'  => 'your-token',
         ],
 
-        'mail' => [
-            'driver' => 'mail',
-            'html'   => 'your-html-view-name',
-            'text'   => 'your-text-view-name',
-        ],
-
         'pagerduty' => [
             'driver' => 'pagerduty',
             'token'  => 'your-token',
