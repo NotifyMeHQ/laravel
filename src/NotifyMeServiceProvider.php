@@ -66,7 +66,7 @@ class NotifyMeServiceProvider extends ServiceProvider
      */
     protected function registerFactory()
     {
-        $this->app->singleton('notifyme.factory', function ($app) {
+        $this->app->singleton('notifyme.factory', function () {
             return new NotifyMeFactory();
         });
 
