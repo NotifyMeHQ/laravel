@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace NotifyMeHQ\Tests\Laravel5\Facades;
+namespace NotifyMeHQ\Tests\Laravel\Facades;
 
 use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
-use NotifyMeHQ\Tests\Laravel5\AbstractTestCase;
+use NotifyMeHQ\Tests\Laravel\AbstractTestCase;
 
 /**
  * This is the notifyme facade test class.
@@ -40,7 +40,7 @@ class NotifyMeTest extends AbstractTestCase
      */
     protected function getFacadeClass()
     {
-        return 'NotifyMeHQ\Laravel5\Facades\NotifyMe';
+        return 'NotifyMeHQ\Laravel\Facades\NotifyMe';
     }
 
     /**
@@ -50,6 +50,6 @@ class NotifyMeTest extends AbstractTestCase
      */
     protected function getFacadeRoot()
     {
-        return 'NotifyMeHQ\Laravel5\NotifyMeManager';
+        return 'NotifyMeHQ\Laravel\NotifyMeManager';
     }
 }

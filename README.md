@@ -23,7 +23,7 @@ Add the service provider to `app.php`
 ```php
 'providers' => [
     // ...
-    'NotifyMeHQ\Laravel5\NotifyMeServiceProvider',
+    'NotifyMeHQ\Laravel\NotifyMeServiceProvider',
 ],
 ```
 
@@ -32,7 +32,7 @@ If you want to use the Facade, also add the alias:
 ```php
 'aliases' => [
     // ...
-    'NotifyMe'  => 'NotifyMeHQ\Laravel5\Facades\NotifyMe',
+    'NotifyMe'  => 'NotifyMeHQ\Laravel\Facades\NotifyMe',
 ],
 ```
 

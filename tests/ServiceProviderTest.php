@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NotifyMeHQ\Tests\Laravel5;
+namespace NotifyMeHQ\Tests\Laravel;
 
 use GrahamCampbell\TestBench\Traits\ServiceProviderTestCaseTrait;
 
@@ -24,6 +24,6 @@ class ServiceProviderTest extends AbstractTestCase
 
     public function testGitLabManagerIsInjectable()
     {
-        $this->assertIsInjectable('NotifyMeHQ\Laravel5\NotifyMeManager');
+        $this->assertIsInjectable('NotifyMeHQ\Laravel\NotifyMeManager');
     }
 }

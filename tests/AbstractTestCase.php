@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NotifyMeHQ\Tests\Laravel5;
+namespace NotifyMeHQ\Tests\Laravel;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
 
@@ -29,6 +29,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app)
     {
-        return 'NotifyMeHQ\Laravel5\NotifyMeServiceProvider';
+        return 'NotifyMeHQ\Laravel\NotifyMeServiceProvider';
     }
 }

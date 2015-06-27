@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NotifyMeHQ\Laravel5\Facades;
+namespace NotifyMeHQ\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

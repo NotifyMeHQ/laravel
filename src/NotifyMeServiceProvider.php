@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NotifyMeHQ\Laravel5;
+namespace NotifyMeHQ\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
@@ -81,7 +81,7 @@ class NotifyMeServiceProvider extends ServiceProvider
             return new NotifyMeManager($config, $factory);
         });
 
-        $this->app->alias('notifyme', 'NotifyMeHQ\Laravel5\NotifyMeManager');
+        $this->app->alias('notifyme', 'NotifyMeHQ\Laravel\NotifyMeManager');
         $this->app->alias('notifyme', 'NotifyMeHQ\NotifyMe\ManagerInterface');
     }
 

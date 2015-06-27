@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NotifyMeHQ\Laravel5;
+namespace NotifyMeHQ\Laravel;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;

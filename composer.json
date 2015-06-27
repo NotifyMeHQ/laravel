@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NotifyMeHQ\\Laravel5\\": "src/"
+            "NotifyMeHQ\\Laravel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NotifyMeHQ\\Tests\\Laravel5\\": "tests/"
+            "NotifyMeHQ\\Tests\\Laravel\\": "tests/"
         }
     },
     "config": {
