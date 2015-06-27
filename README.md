@@ -8,7 +8,7 @@ Add the following to your `composer.json` file.
 
 ```json
 "require": {
-    "notifymehq/laravel5": "~1.0"
+    "notifymehq/laravel": "~1.0"
 }
 ```
 
