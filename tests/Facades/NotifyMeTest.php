@@ -11,17 +11,19 @@
 
 namespace NotifyMeHQ\Tests\Laravel\Facades;
 
-use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
+use NotifyMeHQ\Laravel\Facades\NotifyMe;
+use NotifyMeHQ\Laravel\NotifyMeManager;
 use NotifyMeHQ\Tests\Laravel\AbstractTestCase;
 
 /**
  * This is the notifyme facade test class.
  *
- * @author Vincent Klaiber <hello@vinkla.com>
+ * @author Graham Campbell <graham@alt-three.com>
  */
 class NotifyMeTest extends AbstractTestCase
 {
-    use FacadeTestCaseTrait;
+    use FacadeTrait;
 
     /**
      * Get the facade accessor.
@@ -40,7 +42,7 @@ class NotifyMeTest extends AbstractTestCase
      */
     protected function getFacadeClass()
     {
-        return 'NotifyMeHQ\Laravel\Facades\NotifyMe';
+        return NotifyMe::class;
     }
 
     /**
@@ -50,6 +52,6 @@ class NotifyMeTest extends AbstractTestCase
      */
     protected function getFacadeRoot()
     {
-        return 'NotifyMeHQ\Laravel\NotifyMeManager';
+        return NotifyMeManager::class;
     }
 }

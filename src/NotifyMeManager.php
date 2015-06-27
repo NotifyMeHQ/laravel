@@ -16,6 +16,11 @@ use Illuminate\Contracts\Config\Repository;
 use NotifyMeHQ\NotifyMe\ManagerInterface;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
+/**
+ * This is the notifyme manager class.
+ *
+ * @author Graham Campbell <graham@alt-three.com>
+ */
 class NotifyMeManager extends AbstractManager implements ManagerInterface
 {
     /**

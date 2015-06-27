@@ -13,6 +13,11 @@ namespace NotifyMeHQ\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * This is the notifyme facade class.
+ *
+ * @author Graham Campbell <graham@alt-three.com>
+ */
 class NotifyMe extends Facade
 {
     /**

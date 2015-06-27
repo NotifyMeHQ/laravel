@@ -11,19 +11,28 @@
 
 namespace NotifyMeHQ\Tests\Laravel;
 
-use GrahamCampbell\TestBench\Traits\ServiceProviderTestCaseTrait;
+use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
+use NotifyMeHQ\Laravel\NotifyMeManager;
+use NotifyMeHQ\NotifyMe\ManagerInterface;
+use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
 /**
  * This is the service provider text class.
  *
- * @author Vincent Klaiber <hello@vinkla.com>
+ * @author Graham Campbell <graham@alt-three.com>
  */
 class ServiceProviderTest extends AbstractTestCase
 {
-    use ServiceProviderTestCaseTrait;
+    use ServiceProviderTrait;
 
-    public function testGitLabManagerIsInjectable()
+    public function testFactoryIsInjectable()
     {
-        $this->assertIsInjectable('NotifyMeHQ\Laravel\NotifyMeManager');
+        $this->assertIsInjectable(NotifyMeFactory::class);
+    }
+
+    public function testManagerIsInjectable()
+    {
+        $this->assertIsInjectable(NotifyMeManager::class);
+        $this->assertIsInjectable(ManagerInterface::class);
     }
 }

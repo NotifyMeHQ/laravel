@@ -12,11 +12,12 @@
 namespace NotifyMeHQ\Tests\Laravel;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
+use NotifyMeHQ\Laravel\NotifyMeServiceProvider;
 
 /**
  * This is the abstract test case class.
  *
- * @author Vincent Klaiber <hello@vinkla.com>
+ * @author Graham Campbell <graham@alt-three.com>
  */
 abstract class AbstractTestCase extends AbstractPackageTestCase
 {
@@ -29,6 +30,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app)
     {
-        return 'NotifyMeHQ\Laravel\NotifyMeServiceProvider';
+        return NotifyMeServiceProvider::class;
     }
 }

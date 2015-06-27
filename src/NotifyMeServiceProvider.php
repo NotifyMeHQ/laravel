@@ -12,8 +12,14 @@
 namespace NotifyMeHQ\Laravel;
 
 use Illuminate\Support\ServiceProvider;
+use NotifyMeHQ\NotifyMe\ManagerInterface;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
+/**
+ * This is the notifyme service provider class.
+ *
+ * @author Graham Campbell <graham@alt-three.com>
+ */
 class NotifyMeServiceProvider extends ServiceProvider
 {
     /**
@@ -64,7 +70,7 @@ class NotifyMeServiceProvider extends ServiceProvider
             return new NotifyMeFactory();
         });
 
-        $this->app->alias('notifyme.factory', 'NotifyMeHQ\NotifyMe\NotifyMeFactory');
+        $this->app->alias('notifyme.factory', NotifyMeFactory::class);
     }
 
     /**
@@ -81,8 +87,8 @@ class NotifyMeServiceProvider extends ServiceProvider
             return new NotifyMeManager($config, $factory);
         });
 
-        $this->app->alias('notifyme', 'NotifyMeHQ\Laravel\NotifyMeManager');
-        $this->app->alias('notifyme', 'NotifyMeHQ\NotifyMe\ManagerInterface');
+        $this->app->alias('notifyme', NotifyMeManager::class);
+        $this->app->alias('notifyme', ManagerInterface::class);
     }
 
     /**
@@ -93,8 +99,8 @@ class NotifyMeServiceProvider extends ServiceProvider
     public function provides()
     {
         return [
-            'notifyme',
             'notifyme.factory',
+            'notifyme',
         ];
     }
 }
