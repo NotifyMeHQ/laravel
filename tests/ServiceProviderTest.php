@@ -13,7 +13,7 @@ namespace NotifyMeHQ\Tests\Laravel;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 use NotifyMeHQ\Laravel\NotifyMeManager;
-use NotifyMeHQ\NotifyMe\ManagerInterface;
+use NotifyMeHQ\Contracts\ManagerInterface;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
 /**

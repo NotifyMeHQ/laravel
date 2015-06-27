@@ -12,7 +12,7 @@
 namespace NotifyMeHQ\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use NotifyMeHQ\NotifyMe\ManagerInterface;
+use NotifyMeHQ\Contracts\ManagerInterface;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
 /**

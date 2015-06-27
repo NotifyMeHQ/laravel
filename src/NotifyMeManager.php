@@ -13,7 +13,7 @@ namespace NotifyMeHQ\Laravel;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
-use NotifyMeHQ\NotifyMe\ManagerInterface;
+use NotifyMeHQ\Contracts\ManagerInterface;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
 /**
@@ -50,7 +50,7 @@ class NotifyMeManager extends AbstractManager implements ManagerInterface
      *
      * @param string[] $config
      *
-     * @return \NotifyMeHQ\NotifyMe\GatewayInterface
+     * @return \NotifyMeHQ\Contracts\GatewayInterface
      */
     protected function createConnection(array $config)
     {
