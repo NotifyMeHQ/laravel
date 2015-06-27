@@ -12,6 +12,7 @@
 namespace NotifyMeHQ\Laravel;
 
 use Illuminate\Support\ServiceProvider;
+use NotifyMeHQ\Contracts\FactoryInterface;
 use NotifyMeHQ\Contracts\ManagerInterface;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
@@ -71,6 +72,7 @@ class NotifyMeServiceProvider extends ServiceProvider
         });
 
         $this->app->alias('notifyme.factory', NotifyMeFactory::class);
+        $this->app->alias('notifyme.factory', FactoryInterface::class);
     }
 
     /**

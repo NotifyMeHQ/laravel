@@ -12,8 +12,9 @@
 namespace NotifyMeHQ\Tests\Laravel;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
-use NotifyMeHQ\Laravel\NotifyMeManager;
+use NotifyMeHQ\Contracts\FactoryInterface;
 use NotifyMeHQ\Contracts\ManagerInterface;
+use NotifyMeHQ\Laravel\NotifyMeManager;
 use NotifyMeHQ\NotifyMe\NotifyMeFactory;
 
 /**
@@ -28,6 +29,7 @@ class ServiceProviderTest extends AbstractTestCase
     public function testFactoryIsInjectable()
     {
         $this->assertIsInjectable(NotifyMeFactory::class);
+        $this->assertIsInjectable(FactoryInterface::class);
     }
 
     public function testManagerIsInjectable()
