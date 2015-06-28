@@ -78,7 +78,8 @@ return [
         ],
 
         'webhook' => [
-            'driver' => 'webhook',
+            'driver'   => 'webhook',
+            'endpoint' => 'https://example.com/notify',
         ],
 
         'yo' => [
