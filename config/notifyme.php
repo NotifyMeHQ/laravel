@@ -65,9 +65,10 @@ return [
         ],
 
         'slack' => [
-            'driver' => 'slack',
-            'from'   => 'notifyme',
-            'token'  => 'your-token',
+            'driver'  => 'slack',
+            'from'    => 'notifyme',
+            'token'   => 'your-token',
+            'as_user' => true,
         ],
 
         'twilio' => [
