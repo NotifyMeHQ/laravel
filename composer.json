@@ -1,0 +1,52 @@
+{
+    "name": "notifymehq/laravel",
+    "description": "Provides a laravel bridge for notifyme",
+    "license": "MIT",
+    "keywords": ["notifymehq", "notifyme", "laravel"],
+    "authors": [
+        {
+            "name": "James Brooks",
+            "email": "james@alt-three.com"
+        },
+        {
+            "name": "Graham Campbell",
+            "email": "graham@alt-three.com"
+        },
+        {
+            "name": "Joseph Cohen",
+            "email": "joe@alt-three.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "graham-campbell/manager": "^2.3",
+        "illuminate/contracts": "5.1.*|5.2.*",
+        "illuminate/support": "5.1.*|5.2.*",
+        "notifymehq/contracts": "^1.0",
+        "notifymehq/factory": "^1.0"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^3.1",
+        "phpunit/phpunit": "^4.8|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotifyMeHQ\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotifyMeHQ\\Tests\\Laravel\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
